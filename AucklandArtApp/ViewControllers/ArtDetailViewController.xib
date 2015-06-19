@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E36b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtDetailViewController">
+            <connections>
+                <outlet property="artTextView" destination="BgF-wz-fv2" id="Bcm-FJ-J3n"/>
+                <outlet property="takeMeBtn" destination="VeK-Nj-qpG" id="C4u-Kv-Mdv"/>
+                <outlet property="titleLbl" destination="VYk-r0-QsV" id="Onp-5c-ZhZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kCW-yf-GMq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeK-Nj-qpG">
+                    <rect key="frame" x="10" y="513" width="300" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="iaf-YS-L8N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                    <state key="normal" title="Take Me There">
+                        <color key="titleColor" red="0.37647058820000001" green="0.6588235294" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Britomart Artworks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-r0-QsV">
+                    <rect key="frame" x="60" y="25" width="200" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="zfC-pQ-maA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-wz-fv2">
+                    <rect key="frame" x="35" y="78" width="250" height="420"/>
+                    <string key="text">Artist: Michael Parekowhai, 2004
+Location: Britomart
+Materials: Stainless steel, light boxes, photographs, native trees
+The art work in the Britomart transport centre is often overlooked. This is part of the intention of architect Mario Madayag and artist Michael Parekowhai.
+Parekowhai created a forest of stainless steel trees with truncated, sawn-off limbs surrounded by a garden of real plants. His is a monument to nature lost in the name of progress. This idea is further reflected in the 18 kauri trees planted in Michael Parekowhai - Britomart Art Works 2. Queen Elizabeth II Square, the street space of the Britomart terminal. These living trees provide a counterpoint to the stainless steel trees in the glasshouse space of Mario Madayag's Britomart.
+Parekowhai's trees range in height from five to 23m. Their patterned steel surfaces were created using computer-scanned photos of the tree trunks of native kauri, totara and cabbage trees. These were then turned into textured sheets of stainless steel and wrapped around structural and non-structural pillars in the transport centre. The viewer can no longer tell the difference between structural and sculptural columns.
+Michael Parekowhai - Britomart Art Works 3. Parekowhai is playing on the boundaries between art and architecture. Indistinct boundaries are also evident in the two photos of a forest in the pedestrian subway. These use light boxes to blend with the advertisements that line the subway walls. The subtle inclusion of art means the viewer may not initially notice it. The artist wants to intrigue us; to make us stop and think; to challenge our first impressions. For this reason, the forest photos can also be viewed from above through a hole in the floor of the café.</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VYk-r0-QsV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="0tt-js-JYd"/>
+                <constraint firstAttribute="trailing" secondItem="BgF-wz-fv2" secondAttribute="trailing" constant="35" id="2Yf-Qu-hwe"/>
+                <constraint firstItem="VeK-Nj-qpG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="4zh-Nz-h5r"/>
+                <constraint firstItem="VYk-r0-QsV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="Scd-MF-9yO"/>
+                <constraint firstAttribute="trailing" secondItem="VeK-Nj-qpG" secondAttribute="trailing" constant="10" id="Yxa-tR-miP"/>
+                <constraint firstAttribute="trailing" secondItem="VYk-r0-QsV" secondAttribute="trailing" constant="60" id="ZuA-0Y-ZSp"/>
+                <constraint firstAttribute="bottom" secondItem="BgF-wz-fv2" secondAttribute="bottom" constant="70" id="e89-CX-Ei7"/>
+                <constraint firstItem="BgF-wz-fv2" firstAttribute="top" secondItem="VYk-r0-QsV" secondAttribute="bottom" constant="8" id="jDs-0U-v9r"/>
+                <constraint firstItem="BgF-wz-fv2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="kqD-9O-SIh"/>
+                <constraint firstAttribute="bottom" secondItem="VeK-Nj-qpG" secondAttribute="bottom" constant="10" id="w9q-vV-Wt3"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
